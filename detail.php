@@ -7,22 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/common.css" rel="stylesheet" type="text/css">
         <link href="css/detail.css" rel="stylesheet" type="text/css">
-        <title></title>
+        <title>商品名の詳細</title>
     </head>
 
     <body>
         <?php /*$check = 1;*/ require_once("header.php"); ?>
         <main>
-            <h1>商品詳細</h1>
-            <h2>商品名</h2>
-            <img src="image/noPhoto.png">
-            <p>ここに商品説明を書きます</p>
-
-            <div id="main">
+            
+            <h1>商品名</h1>
+            <div id="img">
+                <img src="image/noPhoto.png">
+                <input type="button" value="商品一覧に戻る">
+            </div>
+            <div id="checkbox">
                 <p>¥1,000</p>
                 <p>在庫：残り〇点</p>
-                <input type="button" value="カートに入れる">
-                <br>
+	        	オプション<input type="checkbox" class="cb">
                 <!--オプション選択 選んだら出てくるやつ-->
                 <div id="cb">
                     文字<input type="checkbox" class="text"><br>
@@ -61,10 +61,15 @@
                         ファイルを選択してください<br>
                         <input type="file">
                     </div>
+                    
                 </div>
+                <br>
+                <input type="button" value="カートに入れる">
+            </div>
+            <div id="detail">
+                <p>ここに商品説明を書きます<br>aaa</p>
             </div>
 
-            <input type="button" value="商品一覧に戻る">
         </main>
         <?php require_once("footer.php"); ?>
     </body>

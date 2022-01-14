@@ -32,10 +32,23 @@ input[type="checkbox"].file:after{
     
 }  
 
-div#main{
-    display:inline-block;
+div#img{
+    display:block;
+    float:left;
+    width: 200px;
+}
+img{
+    width: 200px;
+}
+div#detail{
+    display:block;
+    clear:none;
+    margin-left:210px;
+}
+div#checkbox{
+    display:inline;
+    float:right;
     text-align: right;
-    margin-left: 1300px;
-    margin-right: 80px;
+    width: 280px;
     border: solid 2px
 }
