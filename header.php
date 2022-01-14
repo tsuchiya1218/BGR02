@@ -14,7 +14,7 @@
         
         echo'<nav>';
         echo'<ul class="main_menu">';
-        echo'<li><a href="top.php">トップページ</a></li>';
+        echo'<li><a href="index.php">トップページ</a></li>';
         echo'<li><a href="about.php">店舗案内</a></li>';
         echo'<li><a href="search.php">商品検索</a></li>';
         echo'<li><a href="cart.php">カートを見る</a></li>';
