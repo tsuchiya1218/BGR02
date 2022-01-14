@@ -9,7 +9,7 @@
         <title></title>
     </head>
     <body>
-        <?php $check = 1; require_once("header.php"); ?>
+        <?php /*$check = 1;*/ require_once("header.php"); ?>
         <main>
         </main>
         <?php require_once("footer.php"); ?>
