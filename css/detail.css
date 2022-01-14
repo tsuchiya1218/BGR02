@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#cb,#text,#color,#pattern,#file{ 
+    display: none;
+}
+/*チェックしたら表示*/
+input[type="checkbox"]:checked.cb ~ #cb,
+input[type="checkbox"]:checked.text ~ #text,
+input[type="checkbox"]:checked.color ~ #color,
+input[type="checkbox"]:checked.pattern ~ #pattern,
+input[type="checkbox"]:checked.file ~ #file{
+    display: block;
+}
+
+input[type="checkbox"].cb,
+input[type="checkbox"].text,
+input[type="checkbox"].color,
+input[type="checkbox"].pattern,
+input[type="checkbox"].file{
+    position: relative;
+}
+
+input[type="checkbox"].cb:after,
+input[type="checkbox"].text:after,
+input[type="checkbox"].color:after,
+input[type="checkbox"].pattern:after,
+input[type="checkbox"].file:after{
+    position: absolute;
+    width: 100px; height: 20px;
+    padding-left: 20px;
+    top: 50%;
+    
+}  
+
+div#main{
+    display:inline-block;
+    text-align: right;
+    margin-left: 1300px;
+    margin-right: 80px;
+    border: solid 2px
+}
