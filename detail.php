@@ -22,10 +22,10 @@
             <div id="checkbox">
                 <p>¥1,000</p>
                 <p>在庫：残り〇点</p>
-	        	オプション<input type="checkbox" class="cb">
+	        	<input type="checkbox" class="cb">オプション
                 <!--オプション選択 選んだら出てくるやつ-->
                 <div id="cb">
-                    文字<input type="checkbox" class="text"><br>
+                <input type="checkbox" class="text">文字<br>
                     <!--文字にチェックしたら-->
 
                     <div id="text">
@@ -34,27 +34,19 @@
                     </div>
                     <br>
 
-                    色<input type="checkbox" class="color"><br>
+                    <input type="checkbox" class="color">色<br>
                     <!--色にチェックしたら-->
 
                     <div id="color">
-                        赤<input type="checkbox">
-                        青<input type="checkbox">
-                        黄<input type="checkbox">
+                        <input type="radio" name="color">赤<br>
+                        <input type="radio" name="color">青<br>
+                        <input type="radio" name="color">黄
                     </div>
                     <br>
 
-                    柄<input type="checkbox" class="pattern"><br>
-                    <!--色にチェックしたら-->
+                    
 
-                    <div id="pattern">
-                        丸<input type="checkbox">
-                        三角<input type="checkbox">
-                        四角<input type="checkbox">
-                    </div>
-                    <br>
-
-                    画像<input type="checkbox" class="file"><br>
+                    <input type="checkbox" class="file">画像<br>
                     <!--画像にチェックしたら-->
 
                     <div id="file">
@@ -64,7 +56,7 @@
                     
                 </div>
                 <br>
-                <input type="button" value="カートに入れる">
+                <a href="cart.php"><input type="button" value="カートに入れる"></a>
             </div>
             <div id="detail">
                 <p>ここに商品説明を書きます<br>aaa</p>

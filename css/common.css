@@ -1,7 +1,13 @@
 @charset "UTF-8";
+
 /*header*/
 #title{
 	position:		relative;
+}
+header img{
+	display:flex;
+	width:300px;
+	margin:0px auto;
 }
 body{
 	min-height:     95vh;
@@ -52,6 +58,50 @@ body{
 	background:     #555500;
 	color:          #ffffff;
 	transition:     .25s;
+}
+
+/*main*/
+.box{
+    width:800px;
+    height:auto;
+    margin:0 auto;
+	border		:	#000 2px solid;
+    text-align:center;
+
+}
+#table{
+    width:600px;
+    margin: auto;
+    font-size: 30px;
+
+}
+#table th {
+    width:200px;
+
+}
+#table td {
+    width:200px;
+
+}
+#button{
+    width:100px;
+    margin: auto;
+    padding:-20px;
+}
+#center{
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin:0 auto;
+}
+#left{
+    text-align: left;
+}
+dl dt{
+	font-size:20px;
+}
+dl dd{
+	font-size:15px;
 }
 
 /*footer*/

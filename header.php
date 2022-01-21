@@ -1,13 +1,14 @@
-<!--ログイン画面や購入画面等､メニューを表示したくない時には
-    < ?php
+<?php /*ログイン画面や購入画面等､メニューを表示したくない時には
+    <?php
         $check = 1;
         require_once("header.php");
     ?>
-に変える-->
+に変える*/?>
 
 <header id="title">
-    <h1>なんでも文房具店</h1>
-    <a href="top.php"><button>ログイン</button></a>
+    <!--<h1>なんでも文房具店</h1>-->
+    <a href="index.php"><img src="image/gabalogo.png"></a>
+    <a href="login.php"><button>ログイン</button></a>
     <?php
     
     if(empty($check)){

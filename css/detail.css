@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-#cb,#text,#color,#pattern,#file{ 
+#cb,#text,#color,#file{ 
     display: none;
 }
 /*チェックしたら表示*/
 input[type="checkbox"]:checked.cb ~ #cb,
 input[type="checkbox"]:checked.text ~ #text,
 input[type="checkbox"]:checked.color ~ #color,
-input[type="checkbox"]:checked.pattern ~ #pattern,
 input[type="checkbox"]:checked.file ~ #file{
     display: block;
 }
@@ -15,7 +14,6 @@ input[type="checkbox"]:checked.file ~ #file{
 input[type="checkbox"].cb,
 input[type="checkbox"].text,
 input[type="checkbox"].color,
-input[type="checkbox"].pattern,
 input[type="checkbox"].file{
     position: relative;
 }
@@ -23,7 +21,6 @@ input[type="checkbox"].file{
 input[type="checkbox"].cb:after,
 input[type="checkbox"].text:after,
 input[type="checkbox"].color:after,
-input[type="checkbox"].pattern:after,
 input[type="checkbox"].file:after{
     position: absolute;
     width: 100px; height: 20px;
@@ -48,7 +45,7 @@ div#detail{
 div#checkbox{
     display:inline;
     float:right;
-    text-align: right;
+    
     width: 280px;
     border: solid 2px
 }
