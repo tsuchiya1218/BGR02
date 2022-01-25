@@ -1,4 +1,7 @@
 @charset "UTF-8";
+main{
+	flex:1;
+}
 
 /*header*/
 #title{
@@ -10,9 +13,10 @@ header img{
 	margin:0px auto;
 }
 body{
-	min-height:     95vh;
+	display: 		flex;
+	flex-flow: 		column;
+	min-height:     98vh;
     position:       relative;
-    padding-bottom: 120px;
     box-sizing:     border-box;
 }
 #title button{
@@ -106,6 +110,4 @@ dl dd{
 
 /*footer*/
 footer{
-	position: absolute;
-    bottom: 0; 
 }

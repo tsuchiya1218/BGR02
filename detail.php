@@ -16,12 +16,14 @@
             
             <h1>商品名</h1>
             <div id="img">
-                <img src="image/noPhoto.png">
-                <input type="button" value="商品一覧に戻る">
+                <img src="image/pencil_mitsubisi.jpg">
+                <input type="button" onclick="history.back()" value="商品一覧に戻る">
             </div>
+
             <div id="checkbox">
+                <form action="cart_add.php" method="post">
                 <p>¥1,000</p>
-                <p>在庫：残り〇点</p>
+                <p>在庫：残り10点</p>
 	        	<input type="checkbox" class="cb">オプション
                 <!--オプション選択 選んだら出てくるやつ-->
                 <div id="cb">
@@ -53,13 +55,20 @@
                         ファイルを選択してください<br>
                         <input type="file">
                     </div>
-                    
                 </div>
                 <br>
-                <a href="cart.php"><input type="button" value="カートに入れる"></a>
+                <input type="submit" value="カートに入れる">
+                </form>
             </div>
+
             <div id="detail">
-                <p>ここに商品説明を書きます<br>aaa</p>
+                <p>
+                    えんぴつです<br>
+                    2Bです<br>
+                    木製です<br>
+                    １ダースです<br>
+                    
+                </p>
             </div>
 
         </main>
