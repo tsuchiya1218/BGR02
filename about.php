@@ -11,7 +11,7 @@
     <body>
         <?php /*$check = 1;*/ require_once("header.php"); ?>
         <main>
-            <h1>現在誠意作成中</h1>
+            <h1>ここは店舗案内です</h1>
         </main>
         <?php require_once("footer.php"); ?>
     </body>

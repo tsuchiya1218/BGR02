@@ -9,8 +9,9 @@ main{
 }
 header img{
 	display:flex;
-	width:300px;
+	width: 50%;
 	margin:0px auto;
+
 }
 body{
 	display: 		flex;

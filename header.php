@@ -1,4 +1,19 @@
-<?php /*ログイン画面や購入画面等､メニューを表示したくない時には
+<?php
+session_start();
+try {
+	$dsn = 'sqlsrv:server=10.42.129.3;database=20grb2';
+	$user = '20grb2';
+	$password = '20grb2';
+ //PDOオブジェクトの作成
+	$dbh = new PDO ( $dsn, $user, $password );
+	$dbh ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+} catch ( PDOException $e ) {
+	print "接続エラー!: " . $e->getMessage () . "<br/>";
+	die ();
+}
+$sql = "select MakerID,MakerName,MakerURL from Maker";
+
+/*ログイン画面や購入画面等､メニューを表示したくない時には
     <?php
         $check = 1;
         require_once("header.php");

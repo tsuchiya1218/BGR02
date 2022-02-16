@@ -13,7 +13,7 @@
         <main>
             <div id="center">
                 <h2>支払い方法選択</h2>
-                <form method="POST" action="check.php">
+                <form method="POST" action="buy_check.php">
                     <label for="conv"><input type="radio" id="conv" name="select" value="conveni"checked>
                     コンビニ支払い</label><br>
                     <label for="cre"><input type="radio" id="cre" name="select" value="credit">
